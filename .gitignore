@@ -5,4 +5,4 @@
 *.snm
 *.toc
 *.vrb
-./test/*
+test
