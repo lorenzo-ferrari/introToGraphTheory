@@ -10,7 +10,7 @@ The Implementations presented are written to be as clear and easy to understand 
 
 ### Contents
 
-It includes a presentation written in LaTeX and two animations built using [manim](https://github.com/3b1b/manim) python library.
+This repo includes a presentation written in LaTeX and two animations built using [manim](https://github.com/3b1b/manim) python library.
 
 ### Credits
 
