@@ -6,7 +6,7 @@ This presentation is meant to give high school students a basic overview on grap
 
 ### Disclaimer
 
-The Implementations presented are written to be as clear and easy to understand as possible. Don't assume they are optimal.
+The Implementations presented are written to be as clear and easy to understand as possible. Don't assume their optimality.
 
 ### Contents
 
