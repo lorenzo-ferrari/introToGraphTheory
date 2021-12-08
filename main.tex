@@ -10,7 +10,6 @@
 \usepackage{listings}
 \lstset{language=Python}
 
-% definetely not a copy paste
 \newcommand\scalemath[2]{\scalebox{#1}{\mbox{\ensuremath{\displaystyle #2}}}}
 
 \usetheme{Ilmenau}
@@ -426,9 +425,42 @@ def connectedComponents(G):
 \end{lstlisting}
 \end{frame}
 
+\subsection{Single source shortest path}
+\begin{frame}{Single source shortest path}
+  \begin{block}{\textbf{Problem definition}}
+    Given a weigthed graph $G = (V, E)$ and a source node $s$, find the distance of every node from $s$. If there is not a path from $s$ to a node $v$, \texttt{dist[v]} should be $+\infty$.
+  \end{block}
+  \begin{center}
+  \input{pics/weighted/graph}
+  \end{center}
+\end{frame}
+
+\begin{frame}[fragile]{Single source shortest path}
+\begin{lstlisting}
+def shortestPath(G, s):
+  Q = deque()
+  dist = [math.inf] * G.n
+  dist[s] = 0
+  Q.append(s)
+  while len(Q) > 0:
+    u = Q.popleft()
+    for (v,w) in G.adj(u):
+      if dist[v] > dist[u] + w
+        dist[v] = dist[u] + w
+        Q.append(v)
+
+  return dist
+\end{lstlisting}
+\end{frame}
+
+\subsection{Final frame}
+\begin{frame}{Any questions?}
+  \tableofcontents
+\end{frame}
+
 \end{document}
 
-% ~who needs a bibl?~
+% ~kind of a bibl?~
 % https://www.radford.edu/nokie/classes/360/graphs-terms.html
 % http://disi.unitn.it/~montreso/python/B04-grafi.pdf
 % https://www.olimpiadi-informatica.it/files/guida_selezioni%20territoriali.pdf
