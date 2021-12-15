@@ -374,7 +374,7 @@ def bfs(G, r):
 def dfs(G, r):
   stack = [r]
   visited = {r}
-  while len(st) > 0:
+  while len(stack) > 0:
     u = stack.pop()
     for v in G.adj(u):
       if not v in visited:
