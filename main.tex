@@ -386,7 +386,7 @@ def dfs(G, r):
 \begin{frame}[fragile]{Depth-first search: recursive}
 \begin{lstlisting}
 def dfs(G, u, visited):
-  visited.add(r)
+  visited.add(u)
   for v in G.adj(u):
     if not v in visited
       dfs(G, v, visited)
