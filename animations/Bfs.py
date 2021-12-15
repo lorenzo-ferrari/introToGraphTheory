@@ -1,5 +1,5 @@
 """
-Draw a tree taken in input from "input.txt"
+Draw a tree taken in input from "input.txt" and animate Breadth-First Search on it.
 """
 
 from manim import *
