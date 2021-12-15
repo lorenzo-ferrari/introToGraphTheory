@@ -129,6 +129,33 @@
   \end{center}
 \end{frame}
 
+\begin{frame}{Definition: Paths and Cycles}
+  \begin{block}{\textbf{Path}}
+    A path of length $n$ in a graph $G = (V, E)$ is a sequence $v_0, \dots, v_n \in V$ such that $(v_{i-1}, v_i) \in E \ \forall \ 1 \leq i \leq r$. \\
+
+    A path is \emph{simple} if all $v_i$ differ.
+  \end{block}
+  \begin{block}{\textbf{Cycle}}
+    A cycle is a path in which the first and the last node are the same.
+  \end{block}
+\end{frame}
+
+\begin{frame}{Definition: Subgraph}
+  \begin{block}{\textbf{Subgraph}}
+    A graph $G' = (V', E')$ is subgraph of $G = (V, E)$ if $V' \subseteq V$ and $E' \subseteq E$.
+  \end{block}
+  \begin{columns}
+  \column{0.5\textwidth}
+  \begin{center}
+  \scalebox{0.7}{\input{pics/subgraph/graph.tex}}
+  \end{center}
+  \column{0.5\textwidth}
+  \begin{center}
+  \scalebox{0.7}{\input{pics/subgraph/subgraph.tex}}
+  \end{center}
+  \end{columns}
+\end{frame}
+
 \subsection{Kinds of graph}
 \begin{frame}[fragile]{Directed and Undirected graphs: definition}
   \begin{columns}
@@ -164,7 +191,6 @@ E = { [a,b],[a,d],[b,c],
   \end{center}
 \end{columns}
 \end{frame}
-
 
 \begin{frame}{Cyclic and Acyclic graphs: definition}
   \begin{columns}
